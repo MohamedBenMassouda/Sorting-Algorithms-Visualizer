@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="script.js" defer></script>
+    <title>Sorting Visualizer</title>
+</head>
+<body>
+    <h1>Sorting Algorithms Visualisation</h1>
+    <nav>
+        <p class="nav-text">Chosen Algorithm:</p>
+            <select name="Algorithms" id="algorithms">
+                <option value="BubbleSort">BubbleSort</option>
+                <option value="QuickSort">QuickSort</option>
+                <option value="MergeSort">MergeSort</option>
+            </select>
+        <p class="nav-text">Speed</p>
+        <select name="Speed" id="speed">
+            <option value="Slow">Slow</option>
+            <option value="Medium">Medium</option>
+            <option value="Fast">Fast</option>
+        </select>
+    </nav>
+    <div id="explanation"></div>
+    <br>
+    <button class="btn btn-success" id="start">Start</button>
+    <button class="btn btn-danger" id="generate" onclick="generate()">Generate Array</button>
+
+    <table>
+        <tr>
+            <td id="values1"></td>
+            <td id="values2"></td>
+            <td id="values3"></td>
+            <td id="values4"></td>
+            <td id="values5"></td>
+            <td id="values6"></td>
+            <td id="values7"></td>
+            <td id="values8"></td>
+            <td id="values9"></td>
+            <td id="values10"></td>
+        </tr>
+    </table>
+</body>
+</html>

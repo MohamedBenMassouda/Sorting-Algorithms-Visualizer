@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <title>Sorting Algorithms</title>
+</head>
+<body>
+    <h1>Sorting Visualizer</h1>
+    <nav>
+        <p class="nav-text">Chosen Algorithm:</p>
+        <select name="Algorithms" id="algorithms">
+            <option value="BubbleSort">BubbleSort</option>
+            <option value="QuickSort">QuickSort</option>
+            <option value="MergeSort">MergeSort</option>
+            <option value="InsertionSort">InsertionSort</option>
+        </select>
+        <p class="nav-text">Speed</p>
+        <select name="Speed" id="speed">
+            <option value="Slow">Slow</option>
+            <option value="Medium">Medium</option>
+            <option value="Fast">Fast</option>
+        </select>
+    </nav>
+
+    <input type="range" min="10" max="100" value="20" id="numOfVal" step="1" oninput="changeVal(this.value)" onchange="changeVal(this.value)">
+    <div id="val"></div>
+
+    <div id="container">
+
+    </div>
+  
+    <button id="sort">Sort</button>
+    <button id="generate">Generate</button>
+</body>
+</html>

@@ -1,0 +1,13 @@
+.rect {
+    width: 20px;
+}
+
+h1, #container, nav, #numOfVal {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: xxx-large;
+    color: #dab2ff;
+}
